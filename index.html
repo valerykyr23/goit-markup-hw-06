@@ -348,33 +348,54 @@
 <!--Оформление модального окна и бєкдропа-->
 
 <div class="backdrop is-hidden" data-modal>
+
     <div class="modal">
+
         <button class="modal-close-button" data-modal-close><svg class="close-icon"><use href="./images/icon.svg.svg#icon-close"></use></svg></button>
-        <forma name="client-signup-form">
- <h2>Оставьте свои данные, мы вам перезвоним</h2>
-            <label>
-                 Имя
-                 <input  type="text" name="user_name">
-                </label>
+       
+        <forma class="form-modal" name="client-signup-form">
 
-            <label>
-                Телефон
-                <input type="text" name="user_tel">
-            </label>
+ <p class="title-modal-form">Оставьте свои данные, мы вам перезвоним</p>
 
-                <label>
-                    Почта
-                    <input type="email" name="user_email">
-                </label>
-            <label>
-                Комментарии
-            <textarea name="feedback"   placeholder="Введите текст"></textarea> 
-            <p>Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></p>
-            <button type="submit">Отправить</button>
-        </label>
+ <div class="form-field">
+            <label   for="user-name" class="form-label">Имя</label>
+                 <input class="form-input" type="text" name="user_name" id="user-name">
+                
+
+                </div>
+
+<div class="form-field">
+
+            <label  for="user-tel"  class="form-label">Телефон</label>
+                <input  class="form-input" type="tel" name="user_tel" id="user-tel">
+            
+
+            </div>
+
+            <div class="form-field">
+
+                <label for="user-email"  class="form-label">Почта</label>
+                    <input   class="form-input"  type="email" name="user_email" id="user-email">
+                
+</div>
+
+<div class="form-field">
+            <label  for="user-feedback"  class="form-label">Комментарии</label>
+            <textarea  class="feedback-modal"  name="feedback"   placeholder="Введите текст" id="user-feedback"></textarea> 
+
+            </div>
+
+<div class="modal-form-bottom">
+            <p class="modal-agreement">Соглашаюсь с рассылкой и принимаю <a> <span>Условия договора</span> </a></p>
+           
+           
+            <button class="modal-submit-btn"  type="submit">Отправить</button>
+        </div>
 
         </forma>
+
     </div>
+
 </div>
 
 <!--Скрипт модального окна-->
