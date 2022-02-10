@@ -350,28 +350,35 @@
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="modal-close-button" data-modal-close><svg class="close-icon"><use href="./images/icon.svg.svg#icon-close"></use></svg></button>
+        <forma name="client-signup-form">
+ <h2>Оставьте свои данные, мы вам перезвоним</h2>
+            <label>
+                 Имя
+                 <input  type="text" name="user_name">
+                </label>
+
+            <label>
+                Телефон
+                <input type="text" name="user_tel">
+            </label>
+
+                <label>
+                    Почта
+                    <input type="email" name="user_email">
+                </label>
+            <label>
+                Комментарии
+            <textarea name="feedback"   placeholder="Введите текст"></textarea> 
+            <p>Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></p>
+            <button type="submit">Отправить</button>
+        </label>
+
+        </forma>
     </div>
 </div>
 
 <!--Скрипт модального окна-->
- <script>
-
- (() => {
-        const refs = {
-            openModalBtn: document.querySelector("[data-modal-open]"),
-            closeModalBtn: document.querySelector("[data-modal-close]"),
-            modal: document.querySelector("[data-modal]"),
-        };
-
-        refs.openModalBtn.addEventListener("click", toggleModal);
-        refs.closeModalBtn.addEventListener("click", toggleModal);
-
-        function toggleModal() {
-            refs.modal.classList.toggle("is-hidden");
-        }
-    })();
-    
-    </script>
+ <script src="./js/modal.js"></script>
    
 </body>
 </html>
