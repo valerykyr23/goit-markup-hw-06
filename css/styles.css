@@ -904,3 +904,14 @@ textarea {
 .term-link {
   color: var(--accent-color);
 }
+
+.form-field {
+  position: relative;
+}
+
+.modal-decoration-icon {
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  transform: translateY(50%);
+}
