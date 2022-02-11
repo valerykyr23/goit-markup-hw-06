@@ -915,3 +915,7 @@ textarea {
   left: 12px;
   transform: translateY(50%);
 }
+
+.form-input:hover {
+  border-color: var(--accent-color);
+}
