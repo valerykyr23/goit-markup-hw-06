@@ -56,6 +56,19 @@ img {
   border-radius: 2px;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -822,6 +835,32 @@ textarea {
   margin-bottom: 30px;
 }
 
+.modal-agreement .check {
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.modal-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-check-icon {
+  fill: transparent;
+}
+
+.modal-chekbox:checked + .modal-agreement svg {
+  fill: var(--main-background-color);
+}
+
+.modal-chekbox:checked + .modal-agreement .check {
+  background-color: var(--accent-color);
+  border: none;
+}
+
 .modal-submit-btn {
   font-family: inherit;
   color: var(--main-background-color);
@@ -853,4 +892,11 @@ textarea {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
 }
