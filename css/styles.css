@@ -792,6 +792,8 @@ body {
   align-items: baseline;
 }
 
+/* Оформление формы модального окна */
+
 textarea {
   resize: none;
   font-weight: 400;
@@ -920,6 +922,8 @@ textarea {
   border-color: var(--accent-color);
 }
 
+/* Оформление формы в футере */
+
 .subscribe-title {
   font-weight: 700;
   font-size: 14px;
@@ -939,37 +943,42 @@ textarea {
   line-height: 1.8;
   letter-spacing: 0.06em;
   cursor: pointer;
-  border-radius: 4px;
-  padding: 10px 55px;
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-  padding-left: 29px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 62px;
+  padding: 10px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subscribe-form-footer {
   margin-left: 93px;
+  width: 570px;
 }
 
 .footer-input {
   margin-right: 12px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 16px;
+  padding-right: auto;
 }
 
 .subscribe {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-send-footer {
+  margin-left: 10px;
 }
