@@ -905,7 +905,6 @@ textarea {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding-left: 40px;
 }
 
 .form-input:hover {
@@ -930,14 +929,14 @@ textarea {
   color: var(--accent-color);
 }
 
-.form-field {
+.input-icon-container {
   position: relative;
 }
 
 .modal-decoration-icon {
   position: absolute;
-  top: 11px;
-  left: 12px;
+  top: 0;
+  left: 0;
 }
 
 /* Оформление формы в футере */
