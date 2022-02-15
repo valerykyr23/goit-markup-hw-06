@@ -899,7 +899,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
-  padding: 0;
+  padding-left: 40px;
   cursor: pointer;
 
   transition-property: border-color;
@@ -931,7 +931,7 @@ textarea {
   color: var(--accent-color);
 }
 
-.input-icon-container {
+.form-field {
   position: relative;
 }
 
@@ -939,7 +939,6 @@ textarea {
   position: absolute;
   top: 11px;
   left: 12px;
-  transform: translate(-50%, 50%);
 }
 
 /* Оформление формы в футере */
